@@ -1,0 +1,30 @@
+{
+  "name": "wellington-restaurants",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathewBoyles/Wellington-Restaurants.git"
+  },
+  "keywords": [
+    "wellington",
+    "restaurants",
+    "food",
+    "google-maps"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathewBoyles/Wellington-Restaurants/issues"
+  },
+  "homepage": "https://github.com/MathewBoyles/Wellington-Restaurants#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.3"
+  }
+}
