@@ -1,13 +1,177 @@
+body {
+	font-family: 'Comfortaa', cursive;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 }
 
+#loading {
+	display: none;
+	color: #3389ff;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	z-index: 10000;
+
+	i {
+		animation-duration: 0.6s;
+	}
+}
+
 #map {
 	position: absolute;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	background-color: black;
 	color: white;
 	padding: 45px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#sidebar {
+	display: none;
+	box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.1);
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+	right: 0;
+	width: 400px;
+	z-index: 1000;
+
+	.contactInformation {
+		 > p > a,
+		> p {
+			> i {
+				float: left;
+			}
+
+			> span {
+				margin-left: 25px;
+				display: block;
+			}
+		}
+	}
+
+	#sidebarCover {
+		height: 152px;
+		width: 400px;
+		overflow: hidden;
+		position: absolute;
+
+		img {
+			width: 100%;
+		}
+
+		&:after {
+			content: "";
+			background: #eee;
+			opacity: 0.85;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	#sidebarContainer {
+		width: 80%;
+		position: absolute;
+		left: 40px;
+	}
+
+	#sidebarHeader {
+		width: 100%;
+		height: auto;
+		padding-top: 40px;
+	}
+
+	#profilePicture {
+		float: left;
+		padding-right: 10px;
+
+		img {
+			border-radius: 40px;
+		}
+	}
+
+	#locationClass {
+		margin-top: 20px;
+	}
+
+	h1 {
+		color: #0e7d54;
+		font-size: 1.25em;
+		font-weight: 500;
+	}
+
+	h2 {
+		color: #0B6343;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	#facebookRating {
+		text-align: center;
+		padding-top: 25px;
+	}
+
+	i {
+		color: #16C985;
+	}
+
+	#facebookRatingText {
+		width: 30px;
+		height: auto;
+		color: #0E7D54;
+		font-size: 1em;
+		font-weight: 300;
+		margin: 0 auto;
+		padding-top: 15px;
+	}
+
+	#facebookLikes {
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	h3 {
+		color: #0E7D54;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	.line {
+		width: 100%;
+		height: 1px;
+		background-color: #16C985;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	#sidebarMain {
+		width: 100%;
+		height: calc(100vh - 375px);
+	}
+
+	h4 {
+		font-size: 1em;
+		font-weight: 400;
+		color: #0E7D54;
+		text-align: center;
+		padding-bottom: 30px;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 1em;
+		font-weight: 300;
+		color: #0E7D54;
+	}
 }

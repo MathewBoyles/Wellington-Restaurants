@@ -1,11 +1,124 @@
+body {
+  font-family: 'Comfortaa', cursive; }
+
 * {
   padding: 0;
   margin: 0; }
 
+#loading {
+  display: none;
+  color: #3389ff;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 10000; }
+  #loading i {
+    animation-duration: 0.6s; }
+
 #map {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: black;
   color: white;
   padding: 45px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+#sidebar {
+  display: none;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  width: 400px;
+  z-index: 1000; }
+  #sidebar .contactInformation > p > a > i,
+  #sidebar .contactInformation > p > i {
+    float: left; }
+  #sidebar .contactInformation > p > a > span,
+  #sidebar .contactInformation > p > span {
+    margin-left: 25px;
+    display: block; }
+  #sidebar #sidebarCover {
+    height: 152px;
+    width: 400px;
+    overflow: hidden;
+    position: absolute; }
+    #sidebar #sidebarCover img {
+      width: 100%; }
+    #sidebar #sidebarCover:after {
+      content: "";
+      background: #eee;
+      opacity: 0.85;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%; }
+  #sidebar #sidebarContainer {
+    width: 80%;
+    position: absolute;
+    left: 40px; }
+  #sidebar #sidebarHeader {
+    width: 100%;
+    height: auto;
+    padding-top: 40px; }
+  #sidebar #profilePicture {
+    float: left;
+    padding-right: 10px; }
+    #sidebar #profilePicture img {
+      border-radius: 40px; }
+  #sidebar #locationClass {
+    margin-top: 20px; }
+  #sidebar h1 {
+    color: #0e7d54;
+    font-size: 1.25em;
+    font-weight: 500; }
+  #sidebar h2 {
+    color: #0B6343;
+    font-size: 1em;
+    font-weight: 300; }
+  #sidebar #facebookRating {
+    text-align: center;
+    padding-top: 25px; }
+  #sidebar i {
+    color: #16C985; }
+  #sidebar #facebookRatingText {
+    width: 30px;
+    height: auto;
+    color: #0E7D54;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0 auto;
+    padding-top: 15px; }
+  #sidebar #facebookLikes {
+    text-align: center;
+    padding-top: 30px; }
+  #sidebar h3 {
+    color: #0E7D54;
+    font-size: 1em;
+    font-weight: 300; }
+  #sidebar .line {
+    width: 100%;
+    height: 1px;
+    background-color: #16C985;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #sidebar #sidebarMain {
+    width: 100%;
+    height: calc(100vh - 375px); }
+  #sidebar h4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #0E7D54;
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase; }
+  #sidebar p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #0E7D54; }

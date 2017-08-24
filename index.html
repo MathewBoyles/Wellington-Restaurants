@@ -6,10 +6,66 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wellington Restaurants</title>
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:100,200,300,400,500,600" rel="stylesheet">
 </head>
 <body>
+  <div id="loading">
+    <i class="fa fa-circle-o-notch fa-spin fa-fast fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+  </div>
   <div id="map">Map loading...</div>
+  <div id="sidebar">
+    <div id="sidebarCover">
+      <img />
+    </div>
+		<div id="sidebarContainer">
+			<div id="sidebarHeader">
+				<div id="profilePicture">
+					<img src="http://placehold.it/55x55">
+				</div>
+				<div id="sidebarHeaderText">
+					<h1 id="profileName">...</h1>
+					<h2 id="userName">...</h2>
+				</div>
+        <div class="contactInformation text-center">
+          <p id="locationClass">...</p>
+        </div>
+				<div id="facebookRating">
+          <div>
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+  					<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+  					<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+  					<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+  					<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+          </div>
+          <p class="text-center"></p>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div id="sidebarMain">
+				<div id="sidebarContactInformation">
+					<h4>Contact Information</h4>
+					<div class="contactInformation">
+						<p id="locationPhone"><i class="fa fa-phone" aria-hidden="true"></i> <span>...</span></p>
+					</div>
+          <div class="contactInformation">
+						<p id="locationWebsite"><a href="" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> <span>Visit Website</span></a></p>
+					</div>
+          <div class="contactInformation">
+						<p id="locationAbout"><i class="fa fa-info-circle" aria-hidden="true"></i> <span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div id="sidebarFooter">
+				<div id="sidebarFacebookLink" class="contactInformation">
+					<p id="facebookLink"><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> <span>Visit Page</span></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTyDvknTresdDUNlgeA-3vUYSMF-dcx4M&libraries=geometry"></script>
 <script src="/node_modules/popper.js/dist/popper.min.js"></script>
